@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Averia Gruesa Libre' rel='stylesheet'>
+        <link rel="stylesheet" href="toDoList.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="todo-container">
+                <div class="todo-header">
+                    <h3>To Do List</h3>
+                </div>
+                <div class="todo-content">
+                    <div class="empty-list">
+                        <p>The to-do list is <span style="color: #5d6375;">empty</span></p>
+                        <p>Please <span style="color: #5d6375;">add task</span> ( + ) by clicking below</p>
+                    </div>
+                    <div class="todo-list display">
+                        <span>Set your priority by dragging element</span>
+                    </div>
+                    <button class="NewTask"><span>+</span> New Task</button>
+                </div>
+            </div>
+            <div class="add-task-container invisible">
+                <div class="add-task">
+                    <span class="closeAddTask">&times;</span>
+                    <input type="text" id="inputText" autofocus placeholder="Enter the task...">
+                    <button class="add">Add Task</button>
+                </div>
+            </div>
+        </div>
+        <script src="toDoList.js"></script>
+    </body>
+</html>

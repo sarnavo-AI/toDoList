@@ -26,7 +26,7 @@ $(document).ready(function() {
         para.classList.add('para-style');
         para.setAttribute('draggable', 'true');
         if(inputField.value == "") {
-            window.alert('Please enter a task, the input in empty')
+            window.alert('Please enter a task, the input is empty')
         } else {
             let text = document.createTextNode(inputField.value);
             para.appendChild(text);
